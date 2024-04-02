@@ -1,0 +1,29 @@
+.big-title {
+  font-size: 64px;
+}
+
+.large-title {
+  font-size: 48px;
+}
+
+.medium-title {
+  font-size: 36px;
+}
+
+.small-title {
+  font-size: 24px;
+}
+
+@media (max-width: 1216px) {
+  .big-title {
+    font-size: 48px;
+  }
+  
+  .medium-title {
+    font-size: 24px;
+  }
+  
+  .small-title {
+    font-size: 18px;
+  }    
+}

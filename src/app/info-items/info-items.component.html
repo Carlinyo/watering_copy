@@ -1,0 +1,5 @@
+<div class="info-items">
+    <div class="info-elements">
+        <app-info-item *ngFor="let el of elements; let index = index" [title]="el.title" [desc]="el.desc" [elements]="el.elements" [button]="el.button" />
+    </div>
+</div>

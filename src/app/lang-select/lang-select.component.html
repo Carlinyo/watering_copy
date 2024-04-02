@@ -1,0 +1,12 @@
+<div class="lang-selector-container">
+    <div (click)="openSelect()" class="lang-select">
+        <img src="assets/images/Elements_Watering/globus_icon.png" class="globus">
+        <img src="assets/images/Elements_Watering/black-globus.png" class="black-globus">
+        <img src="assets/images/Elements_Watering/Pfeil_1.svg" class="arrow" [class]="getArrowStyle">
+    </div>
+    <div *ngIf="open" class="options">
+        <div>Eng</div>
+        <div>Rus</div>
+        <div>Fra</div>
+    </div>
+</div>

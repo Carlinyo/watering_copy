@@ -1,0 +1,41 @@
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    padding: 8px 16px;
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: .2s;
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.text-button {
+    background: none;
+    color: #00ABC7;
+    font-weight: 700;
+}
+
+.blue-button {
+    background: #00ABC7;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.white-button {
+    background: white;
+    color: black;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.bold-blue-button {
+    background: #162342;
+    border-radius: 30px;
+    color: #719AAD;
+    font-weight: 600;
+}

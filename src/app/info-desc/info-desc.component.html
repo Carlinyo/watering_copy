@@ -1,0 +1,15 @@
+<div class="info-desc">
+    <ul class="info-desc-items column">
+        <li *ngFor="let el of navElements; let index = index" [class]="index === activeNavItem ? 'active-li' : 'disabled-li'" class="white-text default-text large-weight">
+          {{ el }} <span *ngIf="index === activeNavItem">{{ activeElement + 1 }}/{{ navElements.length }}</span>
+        </li>
+    </ul>
+    <div class="icon-container">
+      <img [src]="icon" class="icon">
+    </div>
+    <div style="text-align: center;" class="bold-blue-text big-title large-weight">{{ navElements[activeNavItem] }}</div>
+    <div class="control center-between">
+      <img [class]="!activeElement ? 'disabled-element' : ''" class="arrow arrow-left" src="assets/images/icons/white-arrow-left.png" (click)="dec()">
+      <img [class]="activeElement === navElements.length - 1 ? 'disabled-element' : ''" class="arrow arrow-right" src="assets/images/icons/white-arrow-right.png" (click)="inc()">
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 16px;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding-top: 60px;
+    padding-left: 30px;
+    background: #02254C;
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 36px;
+        font-weight: 500;
+        &:hover {
+            opacity: .7;
+        }
+    }
+}

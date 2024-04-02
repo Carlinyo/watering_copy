@@ -1,0 +1,85 @@
+.lang-selector-container {
+    position: relative;
+}
+
+.options {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #00ABC7;
+    padding: 4px 12px;
+    width: 50px;
+    border-radius: 12px;
+    div {
+        padding: 4px 0;
+        cursor: pointer;
+        color: black;
+        transition: .2s;
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
+
+.lang-selector-container {
+    img {
+        cursor: pointer;
+    }
+}
+
+.arrow {
+    transition: .2s ease-in-out;
+    height: 8px;
+    width: 18px;
+}
+
+.lang-select {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    transition: .2s;
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.active-arrow {
+    transform: rotate(180deg);
+}
+
+.disabled-arrow {
+    transform: rotate(0);
+}
+
+.globus {
+    height: 22px;
+    width: 22px;
+}
+
+.black-globus {
+    display: none;
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width: 1024px) {
+  .black-globus {
+    display: block;
+  }
+
+  .arrow {
+    filter: brightness(0) saturate(100%) invert(8%) sepia(46%) saturate(2758%) hue-rotate(207deg) brightness(88%) contrast(89%);
+    height: 20px;
+    width: 30px;
+  }
+
+  .lang-select {
+    gap: 8px;
+  }
+
+  .options {
+    top: 45px;
+  }
+}

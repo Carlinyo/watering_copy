@@ -1,0 +1,31 @@
+.info-item {
+    padding: 18% 15%;
+    gap: 20px;
+    width: calc(55vw - 150px);
+}
+
+.title, .desc {
+    padding-left: 64px;
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.element {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.element-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.arrow-icon {
+    width: 24px;
+}

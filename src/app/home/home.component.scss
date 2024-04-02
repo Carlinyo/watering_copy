@@ -1,0 +1,90 @@
+@keyframes animation_katil_mobile {
+  0% {
+    top: 20%;
+    left: 20%;
+    transform: scale(.5);
+  }
+  100% {
+    top: 20.3%;
+    left: 50%;
+    transform: scale(1.4);
+  }
+}
+
+@keyframes animation_katil {
+  0% {
+    top: 20%;
+    left: 20%;
+    transform: scale(.3);
+  }
+  100% {
+    top: 20.3%;
+    left: 61.4%;
+    transform: scale(1.4);
+  }
+}
+
+.home {
+  position: relative;
+  overflow: hidden;
+  height: calc(105vh - 80px);
+  width: calc(100vw - 150px);
+  background: #02254C;
+}
+
+.video {
+  position: absolute; 
+  z-index: 0;
+  animation: 2.5s animation_katil forwards;
+  animation-delay: 2s;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 600px;
+  img {
+    width: 100%;
+    transform: scale(1.3);
+  }
+  video, img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.details {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  gap: 24px;
+  padding: 90px 0 0 80px;
+}
+
+.arrow-right {
+  height: 15px;
+  width: 18px;
+  padding-left: 5px;
+}
+
+@media (max-width: 1024px) {
+  .home {
+    width: 100%;
+  }
+  .video {
+    bottom: -150px;
+    right: 0;
+    animation: 2.5s animation_katil_mobile forwards !important;
+  }
+  .details {
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-left: 30px;
+    gap: 20px;
+  }
+}

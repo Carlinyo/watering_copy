@@ -1,0 +1,17 @@
+<div class="navbar center-end" [style]="navbarBackground">
+    <img class="logo" src="assets/images/Elements_Watering/Logo_Watering_quer.svg">
+    <a [style]="linkColor" class="nav-item sans-serif small-text large-weight light-blue" href="#analysis">Analysis</a>
+    <a [style]="linkColor" class="nav-item sans-serif small-text large-weight light-blue" href="#optimization">Optimization</a>
+    <a [style]="linkColor" class="nav-item sans-serif small-text large-weight light-blue" href="#monitoring">Monitoring</a>
+    <a [style]="linkColor" class="nav-item sans-serif small-text large-weight light-blue" href="#pricing">Pricing</a>
+    <a [style]="linkColor" class="nav-item sans-serif small-text large-weight light-blue" href="#services">Services</a>
+    <div class="lang-select-parent">
+      <app-lang-select *ngIf="!menu" />
+      <img class="menu" [src]="menuIcon" [class]="menu ? 'close-icon' : ''" (click)="toggleMenu()">
+    </div>
+    <app-menu *ngIf="menu" />
+    <div class="buttons">
+      <app-custom-button [buttonStyle]="textButtonColor" variant="text-button">Login</app-custom-button>
+      <app-custom-button [variant]="createAccountButtonVariant">Create Account</app-custom-button>
+    </div>
+</div>

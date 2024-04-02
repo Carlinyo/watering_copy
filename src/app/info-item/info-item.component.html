@@ -1,0 +1,14 @@
+<div class="info-item column-center-start">
+    <div class="title large-weight light-blue large-title">{{ title }}</div>
+    <div class="desc white-text medium-weight default-text">{{ desc }}</div>
+    <div class="elements">
+        <div *ngFor="let el of elements; let index = index" class="element">
+            <img class="element-icon" [src]="el.icon">
+            <div class="element-details">
+                <div class="element-title large-weight light-blue medium-text">{{ el.title }}</div>
+                <div class="element-desc medium-weight white-text default-text">{{ el.desc }}</div>
+            </div>
+        </div>
+    </div>
+    <app-custom-button buttonStyle="height: 50px; margin-left: 55px;" [variant]="button.type">{{ button.text }} <img *ngIf="button.icon" [src]="button.icon" class="arrow-icon"></app-custom-button>
+</div>

@@ -1,0 +1,40 @@
+.sidebar {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background: #00ABC7;
+  height: 100vh;
+  width: 150px;
+  padding: 80px 0 40px 0;
+}
+
+.logo {
+  height: 300px;
+}
+
+.scroll {
+  cursor: pointer;
+  transition: .2s;
+  &:hover {
+    transform: scale(1.1);
+    opacity: .5;
+  }
+  div {
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    height: 160px;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  img {
+    width: 20px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+}
